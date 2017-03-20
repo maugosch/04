@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create mobile phone</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Create mobile phone</h1>
+		<script>
+            var mobilePhone = {
+				model: "Sony Xperia L",
+				weight: 137,
+				touchscreen: true,
+				size: {height: 128.70, width: 65, thickness: 9.70},
+				memoryCard: ["microSD", "microSDHC"],
+			
+                clicked: function () {
+                    "use strict";
+				    window.alert("Model: " + this.model + "\nWeight: " + this.weight + "\nTouch screen: " + this.touchscreen + "\nSize: " + this.size.height + " x " + this.size.width + " x " + this.size.thickness + "\nMemory cards: " + this.memoryCard[0] + ", " + this.memoryCard[1]);
+			    }
+			};
+		</script>
+        
+        <button onClick="mobilePhone.clicked()">Mobile phone</button>
+	</body>
+</html>
